@@ -18,6 +18,8 @@
         <module>cloud-dept-provider-8003</module>
         <module>cloud-dept-consumer-feign</module>
         <module>cloud-dept-provider-hystrix</module>
+        <module>cloud-common</module>
+        <module>cloud-dept-consumer-hystrix-dashboad</module>
     </modules>
 
     <packaging>pom</packaging>

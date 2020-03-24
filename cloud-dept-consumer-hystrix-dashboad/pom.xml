@@ -9,17 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-dept-consumer-feign</artifactId>
-
+    <artifactId>cloud-dept-consumer-hystrix-dashboad</artifactId>
     <dependencies>
-        <dependency><!-- 自己定义的api -->
-            <groupId>com.peas</groupId>
-            <artifactId>cloud-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+        <!-- 自己定义的api -->
         <dependency>
             <groupId>com.peas</groupId>
-            <artifactId>cloud-common</artifactId>
+            <artifactId>cloud-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -33,17 +28,33 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- feign相关-->
+        <!-- feign相关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
+        <!-- hystrix和 hystrix-dashboard相关-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+        </dependency>
+        <!-- actuator监控信息完善 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 
     </dependencies>
+
+
 </project>
