@@ -20,6 +20,11 @@
         <module>cloud-dept-provider-hystrix</module>
         <module>cloud-common</module>
         <module>cloud-dept-consumer-hystrix-dashboad</module>
+        <module>cloud-zuul-gateway</module>
+        <module>cloud-config</module>
+        <module>cloud-config-client</module>
+        <module>cloud-config-eureka-client</module>
+        <module>cloud-config-dept-client</module>
     </modules>
 
     <packaging>pom</packaging>

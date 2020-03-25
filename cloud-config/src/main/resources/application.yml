@@ -1,0 +1,13 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/936992174/cloud-config.git #GitHub上面的git仓库名
+          username: 936992174@qq.com
+          password: yjfc415058**
